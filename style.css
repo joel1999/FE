@@ -18,6 +18,7 @@ ul{
 
 li{
     float: left;
+
 }
 
 li a {
@@ -33,6 +34,11 @@ li a:hover {
 }
 
 /*///////// ...////////*/
+.AM{
+    column-count: 2;
+    column-gap: 50%;
+
+}
 
  /*/////////HOME////////*/
 
