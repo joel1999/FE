@@ -2,48 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Home</title>
     <link href="style.css" rel="stylesheet">
-<!--    icon script-->
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
+<!--////knopje/////-->
 <header>
-    <nav>
-        <ul>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="AboutME.html">About me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
+    <a href="Fotos.html"> <button class="button-collage">Foto Collage</button></a>
 </header>
+
 <body>
+<!--////navbar///////-->
+<nav>
+<!--    <a href="#" id="nav-1">Home</a>-->
+    <a  id="nav-1">Home</a>
+<!--    <a href="#" id="nav-2">About Me</a>-->
+    <a  id="nav-2">About Me</a>
+<!--    <a href="#" id="nav-3">Contact</a>-->
+    <a  id="nav-3">Contact</a>
+</nav>
 
-<h1>Welcome</h1>
 
-<!--<div class="WEL">-->
-<!--        <h2 class="welh2">Joel Ignacius</h2>-->
-<!--        <img src="IMG/ME.jfif" alt="vbfoto" class="img-me">-->
+<!--////about me/////////-->
+<h1 class="h1-text">About me</h1>
 
-<!--        <h3>Skills</h3>-->
-<!--        <p>html&css</p>-->
-<!--        <p>java</p>-->
-<!--</div>-->
+<div class="mainfield">
+    <div class="field-foto1">
+        <img src="IMG/ME.jfif" id="main-foto1" alt="BG">
+    </div>
+    <div class="field-text">
+        <h2 class="h2-text">Joel</h2>
+        <p>
+            Ik ben 23, sport en teken graag in mijn vrije tijd. Voor de rest is het naar school gaan en werken.
+        </p>
+    </div>
+</div>
 
+
+
+<div class="mainfield">
+    <div class="field-text">
+        <h2 class="h2-text">Joel</h2>
+        <p>
+            Ik voetbal sinds mijn 5de. Na school is voetbal voor mij belangrijk. Ik blijf in beweging, na lange dag achter
+            pc zitten is het fijn om even te luchten. Toen ik jonger was, was mijn droom prof voetballer worden. Het is nog steeds zo, en we
+            blijven het proberen elke seizoen. opgeven is geen keus!!
+        </p>
+    </div>
+    <div class="field-foto2">
+        <img src="IMG/vb7.jpg" alt="voetbal">
+    </div>
+</div>
+
+
+
+<!--///animatie/////-->
+<!--<h1 class="h1-text">Animatie</h1>-->
+<!--<section>-->
+<!--    <div>Een kolom</div>-->
+<!--    <div>Dit is ook een kolom</div>-->
+<!--</section>-->
+
+
+<!--//////////formulier////////-->
+<h1 class="h1-text">Contact</h1>
+<section class="sectionformulier">
+
+    <h2>formulier</h2>
+
+    <form action="#" method="post">
+
+        <div class="formfield">
+            <label for="Name">Naam:</label>
+            <input type="text"  id="Name" placeholder="Enter name" name="name">
+        </div>
+
+        <div class="formfield">
+            <label for="city">Woonplaats:</label>
+            <input type="text"  id="city" placeholder="Enter Woonplaats" name="city">
+        </div>
+
+        <div class="formfield">
+            <label for="email">Email:</label>
+            <input type="email"  id="email" placeholder="Enter email" name="email" required>
+        </div>
+
+        <h3>Onderwerp</h3>
+
+        <div class="formfield">
+            <label for="date">Date:</label>
+            <input type="date" id="date" placeholder="Datum" name="date">
+        </div>
+
+        <div class="formfield">
+            <label class="label" for="category">Onderwerp:</label>
+            <select id="category" name="category">
+                <option value="0">School</option>
+                <option value="1">Persoonlijk</option>
+            </select>
+        </div>
+
+        <div class="formfield">
+            <label for="question">Stel vraag:</label>
+            <textarea rows="5" id="question" name="question"></textarea>
+        </div>
+
+        <div class="formfield">
+            <label class="label" for="send-to">Stuur de mail naar</label>
+            <select id="send-to" name="send-to">
+                <option value="0">Joel persoonlijk</option>
+                <option value="1">Joel school</option>
+            </select>
+        </div>
+
+        <div class="formfield">
+            <label class="check">
+                <input type="checkbox" name="voorwaarden"> Ik ga akkoord met de voorwaarden
+            </label>
+        </div>
+
+        <div class="formfield">
+            <!--    <button type="submit">Submit</button>-->
+            <input type="submit" name="submit" value="Submit">
+        </div>
+
+    </form>
+</section>
+
+
+<!--///footer///-->
 <footer>
-    <a class="Footerlink" href="https://youtube.com/channel/UC1FyyqvIHMtRCOOtnsJID4g"><i class="fab fa-youtube fa-2x"></i></a>
-    <a class="Footerlink" href="https://www.instagram.com/j.ignacius/"><i class="fab fa-instagram fa-2x"></i></a>
-    <a class="Footerlink" href="https://www.facebook.com/profile.php?id=100010094556577"><i class="fab fa-facebook fa-2x"></i></a>
-    <p>Copyright © Your Website 2022</p>
+    <a href="https://www.instagram.com/j.ignacius"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100010094556577"><i class="fa fa-facebook"></i></a>
+    <a href="https://youtube.com/channel/UC1FyyqvIHMtRCOOtnsJID4g"><i class="fa fa-youtube"></i></a>
 </footer>
 </body>
-
 </html>
