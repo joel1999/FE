@@ -3,76 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Home</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Portfolio</title>
+<!--    style-->
+    <link href="css/style.css" rel="stylesheet">
+<!--    fonts-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--    icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<!--////knopje/////-->
+<!--////foto knopje/////-->
 <header>
-    <a href="Fotos.html"> <button class="button-collage">Foto Collage</button></a>
+    <a href="Fotos.html"><button class="button-collage">Foto Collage</button></a>
 </header>
 
 <body>
 <!--////navbar///////-->
 <nav>
-<!--    <a href="#" id="nav-1">Home</a>-->
-    <a  id="nav-1">Home</a>
-<!--    <a href="#" id="nav-2">About Me</a>-->
-    <a  id="nav-2">About Me</a>
-<!--    <a href="#" id="nav-3">Contact</a>-->
-    <a  id="nav-3">Contact</a>
+    <a  href="#home" id="nav-1">Home</a>
+    <a  href="#aboutme" id="nav-2">About Me</a>
+    <a  href="#contact" id="nav-3">Contact</a>
 </nav>
 
+<!--///home /////-->
+<section class="home" id="home">
+        <h1 class="h1-text">Home</h1>
+    <section class="main-home">
+        <video controls>
+            <source src="IMG/voetbalvideo.mp4" type="video/mp4">
+        </video>
+    </section>
+</section>
 
 <!--////about me/////////-->
-<h1 class="h1-text">About me</h1>
+<section class="aboutme" id="aboutme">
+    <h1 class="h1-text">About me</h1>
 
-<div class="mainfield">
-    <div class="field-foto1">
-        <img src="IMG/ME.jfif" id="main-foto1" alt="BG">
-    </div>
-    <div class="field-text">
-        <h2 class="h2-text">Joel</h2>
-        <p>
-            Ik ben 23, sport en teken graag in mijn vrije tijd. Voor de rest is het naar school gaan en werken.
-        </p>
-    </div>
-</div>
-
-
-
-<div class="mainfield">
-    <div class="field-text">
-        <h2 class="h2-text">Joel</h2>
-        <p>
-            Ik voetbal sinds mijn 5de. Na school is voetbal voor mij belangrijk. Ik blijf in beweging, na lange dag achter
-            pc zitten is het fijn om even te luchten. Toen ik jonger was, was mijn droom prof voetballer worden. Het is nog steeds zo, en we
-            blijven het proberen elke seizoen. opgeven is geen keus!!
-        </p>
-    </div>
-    <div class="field-foto2">
-        <img src="IMG/vb7.jpg" alt="voetbal">
-    </div>
-</div>
-
-
-
-<!--///animatie/////-->
-<!--<h1 class="h1-text">Animatie</h1>-->
-<!--<section>-->
-<!--    <div>Een kolom</div>-->
-<!--    <div>Dit is ook een kolom</div>-->
-<!--</section>-->
+    <section class="mainfield">
+        <div class="field-text">
+            <h2 class="h2-text">Joel</h2>
+            <p>
+                Ik ben 23, sport en teken graag in mijn vrije tijd. Voor de rest is het naar school gaan en werken.
+                Ik voetbal sinds mijn 5de. Na school is voetbal voor mij belangrijk. Ik blijf in beweging, na lange dag achter
+                pc zitten is het fijn om even te luchten. Toen ik jonger was, was mijn droom prof voetballer worden. Het is nog steeds zo, en we
+                blijven het proberen elke seizoen. opgeven is geen keus!!
+            </p>
+            <img src="IMG/voetbl.jfif" alt="BG" class="amfoto">
+        </div>
+    </section>
+</section>
 
 
 <!--//////////formulier////////-->
-<h1 class="h1-text">Contact</h1>
-<section class="sectionformulier">
+<section class="contact" id="contact">
+    <h1 class="h1-text">Contact</h1>
 
-    <h2>formulier</h2>
+    <h2 class="h2-text">Vragen en/of Feedback</h2>
+    <button onclick="document.getElementById('id01').style.display='block'" class="button-collage" >Formulier</button>
 
-    <form action="#" method="post">
+    <section class="sectionformulier" id="id01">
+        <h2 class="h2-text">formulier</h2>
+        <form action="#" method="post" class="sectionformulier-content">
 
         <div class="formfield">
             <label for="Name">Naam:</label>
@@ -80,32 +71,12 @@
         </div>
 
         <div class="formfield">
-            <label for="city">Woonplaats:</label>
-            <input type="text"  id="city" placeholder="Enter Woonplaats" name="city">
-        </div>
-
-        <div class="formfield">
             <label for="email">Email:</label>
             <input type="email"  id="email" placeholder="Enter email" name="email" required>
         </div>
 
-        <h3>Onderwerp</h3>
-
         <div class="formfield">
-            <label for="date">Date:</label>
-            <input type="date" id="date" placeholder="Datum" name="date">
-        </div>
-
-        <div class="formfield">
-            <label class="label" for="category">Onderwerp:</label>
-            <select id="category" name="category">
-                <option value="0">School</option>
-                <option value="1">Persoonlijk</option>
-            </select>
-        </div>
-
-        <div class="formfield">
-            <label for="question">Stel vraag:</label>
+            <label for="question">Vraag of Feedback:</label>
             <textarea rows="5" id="question" name="question"></textarea>
         </div>
 
@@ -124,19 +95,35 @@
         </div>
 
         <div class="formfield">
-            <!--    <button type="submit">Submit</button>-->
             <input type="submit" name="submit" value="Submit">
         </div>
 
-    </form>
+        </form>
+    </section>
+
+    <script>
+        // Get the modal
+        var sectionformulier = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target === sectionformulier) {
+                sectionformulier.style.display = "none";
+            }
+        }
+    </script>
+
+    <section class="socialmedia">
+        <a href="https://www.instagram.com/j.ignacius"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100010094556577"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://youtube.com/channel/UC1FyyqvIHMtRCOOtnsJID4g"><i class="fa fa-youtube"></i></a>
+    </section>
+
 </section>
 
-
-<!--///footer///-->
-<footer>
-    <a href="https://www.instagram.com/j.ignacius"><i class="fa fa-instagram"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=100010094556577"><i class="fa fa-facebook"></i></a>
-    <a href="https://youtube.com/channel/UC1FyyqvIHMtRCOOtnsJID4g"><i class="fa fa-youtube"></i></a>
-</footer>
 </body>
+
+<footer>
+    <p>Made by <strong>Joel</strong></p>
+</footer>
 </html>
