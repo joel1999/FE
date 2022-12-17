@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-    margin:0;
-    /*background: linear-gradient(to top, #dfe9f3 0%, white 100%);*/
-    /*background: linear-gradient(108.1deg, rgb(167, 220, 225) 11.2%, rgb(217, 239, 242) 88.9%);*/
     background: linear-gradient(to right, #434343 0%, black 100%);
     color:  white;
     font-family: cursive ;
@@ -12,8 +9,6 @@ body {
 
 header{
     width: auto;
-    height: auto;
-    /*background: radial-gradient(993px at 0.5% 98.5%, rgb(0, 239, 247) 0%, rgb(0, 122, 147) 46.7%, rgb(0, 29, 72) 100.2%);*/
     background: linear-gradient(to right, #434343 0%, black 100%);
     padding: 60px 60px 60px 60px ;
     text-align: center;
@@ -27,13 +22,24 @@ header{
 
 .h2-text{
     font-family: cursive ;
-    text-shadow:1px 2px 4px #e1e2ed;
     font-weight: bold;
+    font-size: medium ;
+    text-align: center;
 }
 
+/* dark/light theme */
+/*@media (prefers-color-scheme: light) {*/
+/*body{*/
+/*    color: black;*/
+/*}*/
+/*}*/
+
+/* MOBILE */
+/*@media (min-width: 480px) and (max-width:767px) {*/
+
+/*}*/
 
 /*///////////button/////////*/
-
 .button-collage {
     box-shadow: 4px 11px 10px -2px #899599;
     background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
@@ -49,130 +55,99 @@ header{
     padding:7px 34px;
     text-decoration:none;
     text-shadow:1px 2px 4px #e1e2ed;
+    justify-content: center;
 }
 
 .button-collage:hover {
     background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
     background-color:#bab1ba;
 }
-.button-collage:active {
-    position:relative;
-    top:1px;
-}
 
 /*/////////////navbar///////////////*/
 nav {
     display: flex;
     justify-content: space-between;
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
 }
 
 nav a {
     flex: 1;
-    color: black;
     text-align: center;
-    background: #35bcbf;
     padding: 10px 10px 10px 10px;
     text-decoration: none;
 }
 
-
 nav #nav-1{
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 33%, rgb(89, 89, 89) 66%);
     color: white;
 }
 
-/*nav #nav-1:hover{*/
-/*    background: rgb(64, 64, 64)33%;*/
-/*    color: white;*/
-/*}*/
+nav #nav-1:hover{
+    color: white;
+    border-bottom: white 3px solid;
+}
 
 nav #nav-2{
-    background: radial-gradient(circle at 10% 20%, rgb(89, 89, 89) 33%, rgb(64, 64, 64) 66%, rgb(0, 0, 0) 99%);
     color: white;
 }
-/*nav #nav-2:hover{*/
-/*    background: rgb(0, 0, 0);*/
-/*    color: white;*/
-/*}*/
+
+nav #nav-2:hover{
+    border-bottom: black 3px solid;
+    color: black;
+}
 
 nav #nav-3{
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 33%, rgb(64, 64, 64) 66%);
     color: white;
 }
-/*nav #nav-3:hover{*/
-/*    background: rgb(0, 0, 0);*/
-/*    color: white;*/
-/*}*/
+
+nav #nav-3:hover{
+    border-bottom: black 3px solid;
+    color: black;
+}
 
 
 /*/////////////////////main///////////*/
-
 .mainfield{
     width: auto;
-    height: auto;
-    display: flex;
     margin: 10px 10px 10px 10px ;
 }
 
-.field-foto1{
-    /*width:40%;*/
-    height: 60vh;
-    /*height: 30%;*/
+.amfoto{
+    width: 40%;
     box-shadow: 4px 11px 10px -2px black;
-    overflow: hidden;
-    margin: auto;
-    /*display: block;*/
-    /*object-fit: fill;*/
-    flex: 1;
-}
-.field-foto2{
-    /*width:40%;*/
-    height:60vh;
-    box-shadow: 4px 11px 10px -2px #899599;
-    overflow: hidden;
-    /*margin: auto;*/
-    /*display: block;*/
-    /*object-fit: fill;*/
-    flex: 1;
+    margin: 10px 10px 10px 10px ;
+    border: ridge black 3px;
 }
 
 .field-text{
-    flex: 2;
-    margin: 10px 10px 10px 10px ;
+    padding: 10px 10px 10px 10px ;
+    /*width: 60%;*/
 }
 
-#main-foto1{
-    margin: auto;
-    display: block;
+.main-home{
+    padding: 10px 10px 10px 10px ;
 }
 
+/*////////formulier/modal(content)//////*/
 
-/*section {*/
-/*    display:flex;*/
-/*    justify-content:space-between;*/
-/*}*/
+.sectionformulier {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
 
-/*section div {*/
-/*    background-color:white;*/
-/*    flex:1;*/
-/*}*/
-
-
-/*section div img {*/
-/*    width:100%;*/
-/*    height:40vh;*/
-/*    object-fit:cover;*/
-/*}*/
-
-
-
-/*////////formulier//////*/
-.sectionformulier{
-    background: radial-gradient(circle at 10% 20%, rgb(39, 199, 171) 0%, rgb(70, 143, 197) 90%);
-    justify-content: center;
-    margin-left: 35%;
-    padding: 10px 10px 10px 10px;
-    width: 30%;
+.sectionformulier-content {
+    background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(247, 30, 30) 100.3%);
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: ridge 3px  #888;
+    width: 40%; /* Could be more or less, depending on screen size */
 }
 
 .formfield{
@@ -193,61 +168,82 @@ form{
     color: white;
 }
 
-
-
-/*/////////footer//////////*/
-footer{
+/*///socialmedialinks//*/
+.socialmedia{
     width: auto;
-    height: auto;
-    /*background-size: cover;*/
-    /*background: radial-gradient(993px at 0.5% 98.5%, rgb(0, 239, 247) 0%, rgb(0, 122, 147) 46.7%, rgb(0, 29, 72) 100.2%);*/
-    background: linear-gradient(to right, #434343 0%, black 100%);
-    /*background-position: top;*/
-    padding: 40px 40px 40px 40px ;
-    text-align: center;
+    margin: 15px 15px 15px 15px;
+    padding-left: 45%;
 }
 
 .fa-instagram{
-    color: rgb(13, 24, 32);
-    font-size: 15px;
-    box-sizing: content-box;
-    line-height: 62px;
-    text-align: center;
-    width: 42px;
-    height: 42px;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 50%;
-    /*background-color: rgb(214, 227, 239);*/
-    background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);}
 
-.fa-facebook{
-    color: rgb(13, 24, 32);
-    font-size: 15px;
-    box-sizing: content-box;
-    line-height: 62px;
+    color: white;
     text-align: center;
-    width: 42px;
-    height: 42px;
-    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    width: 20px;
+    height: 20px;
     overflow: hidden;
     border-radius: 50%;
-    /*background-color: rgb(214, 227, 239);*/
+    background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+}
+
+.fa-facebook-official{
+
+    color: white;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 50%;
     background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
 }
 
 .fa-youtube{
-    color: rgb(13, 24, 32);
-    font-size: 15px;
-    box-sizing: content-box;
-    line-height: 62px;
+
+    color: white;
     text-align: center;
-    width: 42px;
-    height: 42px;
-    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    width: 20px;
+    height: 20px;
     overflow: hidden;
     border-radius: 50%;
-    /*background-color: rgb(214, 227, 239);*/
     background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(247, 30, 30) 100.3%);
 
 }
+
+/*//////fotocollage//////*/
+.fotocollage {
+    display:flex;
+    justify-content:space-between;
+    position: inherit;
+    flex-wrap: wrap;
+}
+
+section div {
+    flex:1;
+    padding:10px;
+    text-align: center;
+}
+
+section div img {
+    width:100%;
+    height:40vh;
+    object-fit:cover;
+    border: ridge white 5px;
+
+}
+
+.fotocollage .fc figure p {
+    font-family:cursive;
+    font-weight:bold;
+
+}
+
+/*/////////footer//////////*/
+footer{
+    background: linear-gradient(to right, #434343 0%, black 100%);
+    padding: 40px 40px 40px 40px ;
+    text-align: center;
+}
+
